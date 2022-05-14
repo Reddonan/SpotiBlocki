@@ -108,6 +108,7 @@ function Test-SpotifyVersion
 Write-Host @'
 =====================
 Made By OctoExploitz
+Version 1.0
 =====================
 '@
 
@@ -352,10 +353,10 @@ Write-Host 'Patching Complete, starting Spotify...'
 
 Start-Process -WorkingDirectory $spotifyDirectory -FilePath $spotifyExecutable
 Write-Host 'Done.'
-Start-Sleep -Seconds 5
+Start-Sleep -Seconds 3
 
 Write-Host @'
 ====================
-Made By OctoExploitz
+Enjoy!
 ====================
 '@
