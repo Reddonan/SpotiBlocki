@@ -1,13 +1,13 @@
 param (
   [Parameter()]
   [switch]
-  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Would You Like to Uninstall MicrosoftStore Spotify? (Y/N)') -eq 'y',
+  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Would You Like to Uninstall Microsoft Store Spotify? (Y/N)') -eq 'y',
   [Parameter()]
   [switch]
   $UpdateSpotify,
   [Parameter()]
   [switch]
-  $RemoveAdPlaceholder = (Read-Host -Prompt 'Optional - Remove Ad Banners On The Home Screen. (Y/N)') -eq 'y'
+  $RemoveAdPlaceholder = (Read-Host -Prompt 'Optional - Remove Ad Banners On The Home Screen (Y/N)') -eq 'y'
 )
 
 # Ignore errors from `Stop-Process`
@@ -162,7 +162,7 @@ catch
   exit
 }
 
-Write-Host "Downloading latest patch (chrome_elf.zip)...`n"
+Write-Host "Injecting Dll...`n"
 $elfPath = Join-Path -Path $PWD -ChildPath 'chrome_elf.zip'
 try
 {
