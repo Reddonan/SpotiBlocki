@@ -7,7 +7,6 @@ param (
   $UpdateSpotify,
   [Parameter()]
   [switch]
-  Write-Host @'======================================================================================='@
   $RemoveAdPlaceholder = (Read-Host -Prompt 'Optional - Remove Ad Banners On The Home Screen. (Y/N)') -eq 'y'
 )
 
